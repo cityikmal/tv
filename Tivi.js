@@ -1,3 +1,1 @@
-function playM3u8(url){if(Hls.isSupported()){var video=document.getElementById('video');video.volume=0.3;var hls=new Hls();var m3u8Url=decodeURIComponent(url)
-hls.loadSource(m3u8Url);hls.attachMedia(video);hls.on(Hls.Events.MANIFEST_PARSED,function(){video.play();});document.title=url}}
-playM3u8(window.location.href.split("yes=")[1])
+function playM3u8(e){if(Hls.isSupported()){var o=document.getElementById("video");o.volume=.3;var t=new Hls,n=decodeURIComponent(e);t.loadSource(n),t.attachMedia(o),t.on(Hls.Events.MANIFEST_PARSED,function(){o.play()}),document.title=e}}playM3u8(window.location.href.split("yes=")[1]);
